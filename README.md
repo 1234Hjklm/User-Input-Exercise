@@ -1,10 +1,18 @@
-username = input("Enter your username. ")
+#User Input Exercise
+A simple Python program that checks whether a username entered by the user is valid.
 
-# if username.find(" ") > 0:
-#     print("Sorry, invalid username input.")
-if len(username)>12:
+#Rules Checked
+Username must be 12 characters or fewer
+Username must contain only alphabetic characters
+
+#Concepts Used
+User input
+Conditional statements
+String methods
+
+#Example
+if len(username) > 12 or not username.isalpha():
     print("Sorry, invalid username input.")
-elif username.isalpha() == False:
-    print("Sorry, invalid username input.")
-else:
-    print("Your username input is valid.")
+
+#How to Run
+Run the Python file and enter a username when prompted.
